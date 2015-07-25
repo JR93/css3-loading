@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3-loadingEffect</title>
+	<link rel="stylesheet" type="text/css" href="css3-loadingEffect.css">
+	<script type="text/javascript" src="code.js"></script>
+</head>
+<body>
+	<h1>CSS3实现loading效果</h1>
+	<div class="wrapper">
+		<div class="loading-box">
+			<div class="loading-style-1">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_1">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-2">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_2">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-3">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_3">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-4">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_4">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-5">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_5">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-6">
+				<div><span></span></div>
+				<div><span></span></div>
+				<div><span></span></div>
+				<div><span></span></div>
+			</div>
+			<button id="style_6">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-7">
+				<span></span>
+			</div>
+			<button id="style_7">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-8">
+				<div><span></span></div>
+				<div><span></span></div>
+				<div><span></span></div>
+			</div>
+			<button id="style_8">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-9">
+				<span></span>
+			</div>
+			<button id="style_9">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-10">
+				<span></span>
+			</div>
+			<button id="style_10">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-11">
+				<span></span>
+			</div>
+			<button id="style_11">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-12">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_12">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-13">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_13">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-14">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_14">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-15">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_15">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-16">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_16">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-17">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_17">获取代码</button>
+		</div>
+		<div class="loading-box">
+			<div class="loading-style-18">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<button id="style_18">获取代码</button>
+		</div>
+	</div>
+	 <script type="text/javascript">
+	 	function dialog(){
+		    //获取页面的高度和宽度
+		    var sWidth=document.body.scrollWidth || document.documentElement.scrollWidth;
+		    var sHeight=document.body.scrollHeight || document.documentElement.scrollHeight;
+		    
+		    //获取页面的可视区域高度和宽度
+		    var wHeight=document.documentElement.clientHeight || document.body.clientHeight;
+		    
+		    //创建遮罩层
+		    var oMask=document.createElement("div");
+		    oMask.id="mask";
+		    oMask.style.height=sHeight+"px";
+		    oMask.style.width=sWidth+"px";
+		    document.body.appendChild(oMask);            //添加到body末尾
+		      
+		    //创建登录框
+		    var oContent=document.createElement("div");
+		    oContent.id="dialog";
+		    oContent.innerHTML="<div class='content'><div id='close' class='btn-box'><span class='icon-remove'></span></div><div id='code' contenteditable='true'></div></div>";
+		    document.body.appendChild(oContent);
+		    
+		    //获取登陆框的宽和高
+		    var dHeight=oContent.offsetHeight;
+		    var dWidth=oContent.offsetWidth;
+
+		    //设置登陆框的left和top
+		    oContent.style.left=sWidth/2-dWidth/2+"px";
+		    oContent.style.top=wHeight/2-dHeight/2+"px";
+
+		    //获取关闭按钮
+		    var oClose=document.getElementById("close");
+		    
+		    //点击关闭按钮和点击登陆框以外的区域都可以关闭登陆框
+		    oClose.onclick=oMask.onclick=function(){
+		        document.body.removeChild(oContent);
+		        document.body.removeChild(oMask);
+		    };
+		}
+		window.onload=function(){
+			for(var i = 1; i <= 18; i++){
+				document.getElementById("style_"+i).onclick = function(e){
+					dialog();
+					// alert(CODE[e.target.id]);
+					document.getElementById("code").innerHTML = window.CODE[e.target.id];
+				};
+			}
+		}
+	 </script>
+</body>
+</html>
