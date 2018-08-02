@@ -1,2 +1,2 @@
-# css3-loadingEffect
+# css3-loading
 使用CSS3制作的18种loading效果，已经整理好，可以直接获取相对应的代码...
